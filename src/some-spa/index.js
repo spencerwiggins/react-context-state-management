@@ -1,7 +1,8 @@
 import React from "react";
-import { UserProvider } from "../core/User";
+
+import { UserProvider } from "../core/components/User";
+import LoginLogoutButton from "../core/components/LoginLogoutButton";
 import IdCard from "../feature/IdCard";
-import LoginLogoutButton from "../core/LoginLogoutButton";
 import loginActions from "./actions/loginActions";
 
 export default () => (

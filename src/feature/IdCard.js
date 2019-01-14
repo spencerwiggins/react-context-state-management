@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import UserContext from "../core/User";
+import UserContext from "../core/components/User";
 
 const IdCardContainer = () => {
   const { currentUser } = useContext(UserContext);

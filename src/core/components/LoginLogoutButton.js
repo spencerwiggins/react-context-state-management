@@ -1,18 +1,6 @@
 import React, { useContext } from "react";
 import UserContext from "./User";
-
-const composePromise = (...fns) => x =>
-  fns.reduce((acc, val) => acc.then(val), Promise.resolve(x));
-
-const composeActions = fns => {
-  return async () => {
-    try {
-      await composePromise(...fns)();
-    } catch (e) {
-      console.log("error", e);
-    }
-  };
-};
+import composeActions from "../helpers/composeActions";
 
 const LoginLogoutButtonContainer = ({ actions }) => {
   const { currentUser, setCurrentUser, clearCurrentUser } = useContext(

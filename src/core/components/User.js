@@ -12,7 +12,6 @@ const UserProvider = props => {
 
   const actions = {
     setCurrentUser: user => {
-      console.log("setCurrentUser:", user);
       setState({
         currentUser: user
       });
