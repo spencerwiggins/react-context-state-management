@@ -11,6 +11,7 @@ const LoginLogoutButtonContainer = ({ actions }) => {
     <LoginLogoutButton
       currentUser={currentUser}
       onLoginClick={composeActions([actions.login, setCurrentUser])}
+      onLogoutClick={clearCurrentUser}
     />
   );
 };
